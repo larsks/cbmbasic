@@ -1,5 +1,6 @@
 OBJS=cbmbasic.o runtime.o plugin.o console.o
-CFLAGS+=-Wall -O3
+CFLAGS+=-Wall -O3 -fPIE
+LDFLAGS+=-pie
 
 all: cbmbasic
 
@@ -8,4 +9,3 @@ cbmbasic: $(OBJS)
 
 clean:
 	rm -f $(OBJS) cbmbasic
-
