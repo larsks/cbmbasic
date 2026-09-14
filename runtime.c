@@ -479,7 +479,6 @@ printf("CHROUT: %d @ %x,%x,%x,%x\n", A, a, b, c, d);
       case 10:
         break;
       case 13:
-        putchar(13);
         putchar(10);
         break;
       case 17: /* CSR DOWN */
