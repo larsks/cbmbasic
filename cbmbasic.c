@@ -92,7 +92,9 @@
 #define CODE_FOR_MAIN() /* Any target-specific code for main()*/
 
 #ifndef __cplusplus
+#if !defined(__STDC_VERSION__) || __STDC_VERSION__ < 202311L
 typedef unsigned char bool;
+#endif
 #endif
 
 
